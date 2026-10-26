@@ -1,0 +1,55 @@
+{
+  "name": "@promopilot/robots-generator",
+  "version": "1.0.0",
+  "description": "Generate robots.txt from the command line or code: presets for WordPress, WooCommerce, Shopify, Magento, Next.js, Laravel and staging sites, custom Allow/Disallow rules, sitemaps, crawl-delay, one-flag blocking of 20 AI crawlers (GPTBot, ClaudeBot, Google-Extended, CCBot…) and SEO bots, with built-in lint. Zero-dependency Node.js CLI, library and GitHub Action. Free online version by PromoPilot.",
+  "keywords": [
+    "robots-txt",
+    "robots-txt-generator",
+    "seo",
+    "technical-seo",
+    "ai-crawlers",
+    "gptbot",
+    "block-ai",
+    "web-crawler",
+    "wordpress",
+    "nextjs",
+    "cli",
+    "nodejs",
+    "github-action",
+    "promopilot"
+  ],
+  "homepage": "https://promopilot.link/en/tools/robots-generator.php?utm_source=github&utm_medium=repo&utm_campaign=tools&utm_content=robots-generator",
+  "bugs": {
+    "url": "https://github.com/ksanyok/robots-generator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksanyok/robots-generator.git"
+  },
+  "license": "MIT",
+  "author": "Alexandr Krikun (https://github.com/ksanyok)",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "robots-generator": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

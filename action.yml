@@ -1,0 +1,16 @@
+name: "Robots.txt Generator by PromoPilot"
+description: "Generate robots.txt from a preset and rules during your build."
+author: "Alexandr Krikun"
+branding:
+  icon: "file-text"
+  color: "purple"
+inputs:
+  args:
+    description: "Arguments passed to the robots-generator CLI, e.g. \"--preset wordpress --block-ai\""
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Run robots-generator
+      shell: bash
+      run: node "$GITHUB_ACTION_PATH/bin/cli.js" ${{ inputs.args }}
