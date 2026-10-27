@@ -118,7 +118,7 @@ Options:
   --json                 Print config, text and issues as JSON
   -h, --help             Show this help
 
-Online version (no install): https://promopilot.link/en/tools/robots-generator.php
+Online version (no install): https://promopilot.link/en/tools/robots-generator.php?utm_source=github&utm_medium=cli&utm_campaign=tools&utm_content=robots-generator
 ```
 
 ## Use as a library
